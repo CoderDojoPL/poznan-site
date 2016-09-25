@@ -1,0 +1,6 @@
+/vendor/
+/cache/
+/config/variables.xml
+/uploaded/portfolio/
+/.idea/
+/dev

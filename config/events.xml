@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<content>
+	<event class="ItePHP\Action\ArgumentEvent">
+		<method name="__construct">
+			<argument type="reference" value="container" />
+		</method>		
+		<bind name="executeAction" method="onExecuteAction" />
+	</event>
+	<event class="ItePHP\Action\AuthenticateEvent">
+		<method name="__construct">
+			<argument type="reference" value="config" />
+		</method>		
+		<bind name="executeAction" method="onExecuteAction" />
+	</event>
+</content>

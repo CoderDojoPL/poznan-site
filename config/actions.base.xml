@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+
+<content>
+	<action class="Controller\BaseController" method="index" route="(\/|)" presenter="twig" />
+</content>

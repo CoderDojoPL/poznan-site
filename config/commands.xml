@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<content>
+	<command class="ItePHP\Migrate\MigrateCommand" name="migrate">
+		<method name="__construct">
+			<argument type="reference" value="container" />
+			<argument type="reference" value="environment" />
+		</method>
+	</command>
+	<command class="Command\LessCompilerCommand" name="less">
+		<method name="__construct">
+			<argument type="reference" value="environment" />
+		</method>
+	</command>
+
+</content>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<content>
+    <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="getDoctrine" />
+    <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="getRepository" />
+    <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="find" />
+    <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="findOne" />
+    <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="flush" />
+    <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="persist" />
+    <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="executeQuery" />
+    <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="escape" />
+    <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="getConnection" />
+    <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="remove" />
+    <snippet class="ItePHP\Core\MapperSnippet" method="cast" />
+    <snippet class="ItePHP\Core\ValidatorSnippet" method="validate" />
+    <snippet class="ItePHP\Core\RouteSnippet" method="redirect" />
+</content>

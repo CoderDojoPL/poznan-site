@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<content>
+	<presenter name="twig" class="ItePHP\Twig\TwigPresenter">
+		<method name="__construct">
+			<argument type="reference" value="environment" />
+		</method>
+	</presenter>
+	<presenter name="json" class="ItePHP\Presenter\JSON">
+		<method name="__construct">
+			<argument type="reference" value="environment" />
+		</method>
+	</presenter>
+</content>

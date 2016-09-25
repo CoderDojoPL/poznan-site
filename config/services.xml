@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<content>
+	<service name="doctrine" class="ItePHP\Doctrine\DoctrineService">
+		<method name="__construct">
+			<argument type="reference" value="environment" />
+			<argument type="reference" value="eventManager" />
+			<argument type="primitive" value="@db.driver" />
+			<argument type="primitive" value="@db.username" />
+			<argument type="primitive" value="@db.password" />
+			<argument type="primitive" value="@db.name" />
+			<argument type="primitive" value="@db.host" />
+			<argument type="primitive" value="@db.host" />
+			<argument type="primitive" value="@db.port" />
+		</method>
+	</service>
+	<service name="validator" class="ItePHP\Core\ValidatorService" />
+	<service name="twig" class="ItePHP\Twig\TwigService" />
+	<service name="mapper" class="ItePHP\Core\MapperService">
+		<method name="__construct">
+			<argument type="reference" value="container" />
+		</method>
+	</service>
+	<service name="form" class="ItePHP\Component\Form\FormBuilder" singletone="false" />
+	<service name="grid" class="ItePHP\Component\Grid\GridBuilder" singletone="false">
+		<method name="__construct">
+			<argument type="reference" value="request" />
+		</method>
+	</service>
+</content>
