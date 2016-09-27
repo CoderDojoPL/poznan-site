@@ -14,21 +14,24 @@
  */
 
 namespace Controller;
+
 use ItePHP\Core\Controller;
 
 /**
  * Example controller.
  */
-class BaseController extends Controller{
-	
-	/**
-	 * Example action.
-	 *
-	 * @return array
-	 */
-	public function index(){
+class BaseController extends Controller
+{
 
-	    $portfolio=[];
-		return $portfolio;
-	}
+    /**
+     * Example action.
+     *
+     * @return array
+     */
+    public function index()
+    {
+
+        $portfolio = [];
+        return $portfolio;
+    }
 }
