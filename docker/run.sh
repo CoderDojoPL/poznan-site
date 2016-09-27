@@ -17,7 +17,7 @@ if [ -z "`docker ps |grep coder-dojo-poznan-httpd |awk '{ print $1 }'`" ]
 then
 	if [ -z "$httpd" ]
 	then
-	docker run -d -p 2044:80 --privileged -v `pwd`:/var/www/html --link coder-dojo-poznan-pgsql -i -t coder-dojo-poznan-httpd
+	docker run -d -p 2044:80 --privileged -v "`pwd`":/var/www/html --link coder-dojo-poznan-pgsql -i -t coder-dojo-poznan-httpd
 	else
 	docker start $httpd
 	fi

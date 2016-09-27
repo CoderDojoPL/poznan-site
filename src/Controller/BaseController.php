@@ -24,14 +24,16 @@ use Exception\EmailAlreadyAddedExcpetion;
  * @method persist(object $entity)
  * @method flush()
  */
-class BaseController extends Controller{
-	
-	/**
-	 * Example action.
-	 *
-	 * @return array
-	 */
-	public function index(){
+class BaseController extends Controller
+{
+
+    /**
+     * Example action.
+     *
+     * @return array
+     */
+    public function index()
+    {
 
 	    $portfolio=[];
 		return $portfolio;
