@@ -1,5 +1,8 @@
 <?xml version="1.0" ?>
 
 <content>
-	<action class="Controller\BaseController" method="index" route="(\/|)" presenter="twig" />
+    <action class="Controller\BaseController" method="index" route="(\/|)" presenter="twig"/>
+    <action class="Controller\BaseController" method="addNewslatter" route="\/addNewsletter\.json" presenter="jsa">
+        <argument storage="post" name="email" validator="ItePHP\Validator\EmailValidator"/>
+    </action>
 </content>
