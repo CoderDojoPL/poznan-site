@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 
 <content>
+	<error pattern=".*\.json" presenter="jsa" />
 	<error pattern=".*" presenter="twig" />
 </content>

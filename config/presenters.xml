@@ -11,4 +11,9 @@
 			<argument type="reference" value="environment" />
 		</method>
 	</presenter>
+	<presenter name="jsa" class="Presenter\JSA">
+		<method name="__construct">
+			<argument type="reference" value="environment" />
+		</method>
+	</presenter>
 </content>

@@ -14,11 +14,15 @@
  */
 
 namespace Controller;
-
+use Entity\NewsletterEntity;
 use ItePHP\Core\Controller;
+use Exception\EmailAlreadyAddedExcpetion;
 
 /**
  * Example controller.
+ * @method findOne(string $entity,mixed[] $conditions=array(), string[] $orders=array())
+ * @method persist(object $entity)
+ * @method flush()
  */
 class BaseController extends Controller
 {
@@ -31,7 +35,24 @@ class BaseController extends Controller
     public function index()
     {
 
-        $portfolio = [];
-        return $portfolio;
+	    $portfolio=[];
+		return $portfolio;
+	}
+
+    /**
+     * @param string $email
+     * @throws EmailAlreadyAddedExcpetion
+     */
+	public function addNewslatter($email){
+        $newsletter=$this->findOne('NewsletterEntity',['address'=>$email]);
+        if($newsletter){
+            throw new EmailAlreadyAddedExcpetion();
+        }
+
+        $newsletter=new NewsletterEntity();
+        $newsletter->setAddress($email);
+        $newsletter->setToken(uniqid());
+        $this->persist($newsletter);
+        $this->flush();
     }
 }
