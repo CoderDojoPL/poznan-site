@@ -3,6 +3,7 @@
 <content>
 	<import file="globals.xml" />
 	<import file="actions.base.xml" />
+	<import file="actions.admin.xml" />
 	<import file="commands.xml" />
 	<import file="presenters.xml" />
 	<import file="services.xml" />

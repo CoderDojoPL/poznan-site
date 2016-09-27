@@ -43,6 +43,7 @@ class LessCompilerCommand implements CommandInterface
     {
         $dir=$this->environment->getRootPath()."/asset/less";
         $this->compileFile($dir,"creative.less");
+        $this->compileFile($dir,"authenticate.less");
     }
 
     /**

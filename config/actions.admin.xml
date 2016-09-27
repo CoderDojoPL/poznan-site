@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+
+<content>
+    <action class="Controller\AdminController" method="authenticate" route="\/admin(\/|)" presenter="twig"/>
+</content>
